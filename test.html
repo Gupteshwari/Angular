@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<h1>{{4/2}}</h1>
+<div ng-bind-html="trustedHtml" >
+
+</div>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope,$sce) {
+$scope.html = '<div><style>li{color:red;}</style><ul><li>render me please</li></ul><div>';
+$scope.trustedHtml = $sce.trustAsHtml($scope.html);
+});
+</script>
+</body>
+</html>
+
