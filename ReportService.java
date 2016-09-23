@@ -1,7 +1,7 @@
 /**
- * 
+ *  "*" add ur package name
  */
-package com.exilant.itap.spagobi.service;
+package *.spagobi.service;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.exilant.itap.spagobi.controller.SaveReportSpago;
+import *.spagobi.controller.SaveReportSpago;
 
 /**
  * @author gupteshwari.sahu
