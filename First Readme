@@ -1,0 +1,75 @@
+THINGS that are need to add are :
+A. Paste all the reports  under resources folder or WEB-INF (create a foler with name "Reports" and paste reports )
+B. Create one folder name tlds and paste "birt.tlds inside it (path is described below inside tag taglib.)
+C. Add all the dependecy that are provided and required for Birt report.
+
+___________________________________________________________________________________________________________________________
+CODES that needs to add in the respective files:
+
+
+1. Add jsp-config in web.xml for mentioning birt.tld file path 
+
+<jsp-config>
+<taglib>
+<taglib-uri>/birt.tld</taglib-uri>
+<taglib-location>/WEB-INF/tlds/birt.tld</taglib-location>
+</taglib>
+</jsp-config>
+
+
+2. Add maven dependency
+
+<!-- START : SPAGOBI DEPENDENCY -->
+ 
+ <dependency>
+<groupId>javax.servlet</groupId>
+<artifactId>jstl</artifactId>
+<version>1.2</version>
+</dependency>
+<dependency>
+<groupId>org.eclipse.core</groupId>
+<artifactId>runtime</artifactId>
+<version>3.10.0-v20140318-2214</version>
+</dependency>
+
+
+<dependency>
+<groupId>org.eclipse.birt.runtime</groupId>
+<artifactId>org.eclipse.birt.runtime</artifactId>
+<version>4.4.1</version>
+</dependency>
+
+<!-- END :  SPAGOBI DEPENDENCY  -->
+
+3. Add div in .html file  where u want to display report
+
+added html file for reading the report
+
+4. for printing the report as pdf use below css :
+
+@CHARSET "UTF-8";
+@media print {
+
+ @page { margin: 25px; }
+  .BODYclass{
+    visibility: hidden;
+  }
+  
+  //those parts u want to print make it visible like logo or div. where u are displaying report
+  .logo  {
+    visibility: visible;}
+  
+ #printPdf  {
+    visibility: visible;
+    position: absolute;
+    background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 100px;
+        left: 00;
+       margin: 20px; 
+      size: landscape;  
+  }
+ }
+
