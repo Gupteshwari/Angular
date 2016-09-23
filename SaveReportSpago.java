@@ -1,7 +1,7 @@
 /**
  *  
  */
-package com.exilant.itap.spagobi.controller;
+package *.spagobi.controller;
 
 import java.io.*;
 
