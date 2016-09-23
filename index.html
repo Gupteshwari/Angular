@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <link href="style.css" rel="stylesheet" />
+  <script data-semver="1.4.9" src="https://code.angularjs.org/1.4.12/angular.js" data-require="angular.js@1.4.x"></script>
+  <script src="app.js"></script>
+  
+  <script type="text/javascript">
+                function doit(){
+                if (!window.print){
+                return  alert("Print the Page")
+                }
+                window.print()
+                }
+            </script>
+</head>
+
+<body ng-controller="MainCtrl">
+  <div ng-app="" id="Printdiv">
+    <table class="hide">
+      <tr>
+        <td>
+          <p lign="center">To : </p>
+        </td>
+        <td>
+          <input type="text" ng-model="Toname" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p align="center"> From : </p>
+        </td>
+        <td>
+          <input type="text" ng-model="Fromname" />
+        </td>
+      </tr>
+    </table>
+
+    <hr id='hideline' height=200%>
+
+    <br>
+    <br>
+    <p>To {{Toname}} ,</p>
+
+    <div>
+
+      <h2 align="center">Lorem Ipsum</h2>
+      <hr width="50%">
+      <br />
+      <h4 id="quote" align="center">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                <br/>
+
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h4>
+      <br />
+      <br />
+      <p id="P1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend faucibus dui, vitae consequat orci euismod ac. Integer varius a mauris vel lobortis. Integer ullamcorper nibh justo, sit amet pellentesque quam volutpat sed. Aliquam et ex pulvinar,
+        posuere magna ac, auctor libero. Nam suscipit quis quam et condimentum. Praesent a malesuada purus. Proin gravida, libero eu maximus ornare, eros lectus fermentum tellus, porta auctor elit quam sed libero. Aenean congue velit quis orci pulvinar,
+        ut dictum quam lobortis. Nam et urna eu erat auctor luctus. Donec vehicula aliquam laoreet. Nulla non lacinia nulla, at aliquam mauris. Donec dictum turpis risus, in ullamcorper nisl semper quis. Vestibulum et odio in nisi accumsan lacinia in
+        in ligula. Aliquam iaculis felis ac orci auctor convallis. Fusce hendrerit, lorem sit amet semper ultricies, odio est suscipit nisi, non tristique augue sem tempus eros. Duis tempor dignissim nunc vel eleifend.
+        <br />
+        <br /> Curabitur vitae libero ut elit varius pretium. Nullam dictum, metus in fringilla feugiat, sapien nibh aliquam odio, eget tempus velit nibh at lacus. Mauris eget aliquet lectus. Maecenas convallis ultrices velit. Aliquam non arcu sit amet urna
+        congue malesuada. Cras ut risus rutrum, fringilla erat porttitor, malesuada urna. Nunc ultricies ipsum sit amet lorem posuere imperdiet. Curabitur egestas placerat diam, quis blandit enim aliquet ut. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia Curae; Nullam pellentesque blandit malesuada. Suspendisse sed aliquam purus, sed egestas neque. Quisque enim metus, iaculis sed ligula quis, sagittis commodo mi. Ut egestas, justo eget congue ultricies, mauris
+        lacus ullamcorper ipsum, ac maximus nisi mi eu purus.
+        <br />
+        <br /> Fusce luctus ligula erat, vitae commodo dolor pretium at. Nunc est massa, mollis a massa in, consequat semper lorem. Vivamus purus tortor, cursus in est nec, aliquam feugiat dolor. Morbi molestie commodo erat volutpat posuere. Suspendisse volutpat
+        sollicitudin pulvinar. Sed faucibus facilisis elit ut convallis. Quisque eros ipsum, interdum eu lacinia eget, tempus eget urna. Morbi mollis ultricies lacus, et pulvinar diam malesuada dignissim. Nullam rutrum tortor nec lorem ultrices varius.
+        Vivamus vel est turpis. Aenean ultrices porttitor lectus hendrerit pharetra. Sed ac hendrerit metus, ac maximus justo. Quisque nec lacus nec quam auctor pretium. Donec ullamcorper auctor feugiat. Sed vel eros ac nisi ultrices condimentum eget
+        nec mi.
+        <br />
+        <br /> Nunc luctus accumsan elementum. Etiam laoreet aliquet ultricies. Vivamus quis pharetra est. Praesent efficitur augue sit amet dolor porttitor, in aliquam massa efficitur. Etiam dignissim tellus id ex sodales lacinia. Pellentesque mollis nulla
+        velit, eget volutpat ex suscipit id. Aliquam viverra lectus sit amet metus dignissim ullamcorper. Fusce dapibus arcu nec massa consectetur, at elementum dui fringilla. Nullam pretium metus vel ligula hendrerit feugiat. Duis sed malesuada elit,
+        ut commodo sem. Nullam vitae viverra lectus, quis tristique nisi.
+        <br />
+        <br /> Aenean tristique diam sit amet urna facilisis ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Proin a sollicitudin nisi, id ornare eros. Cras pharetra, augue eu faucibus
+        bibendum, nibh nulla ultricies orci, quis ultrices elit lacus fermentum eros. Donec suscipit euismod ex, sit amet tempus ex pulvinar quis. Aenean iaculis fermentum elit a fermentum. Praesent ligula elit, efficitur vitae felis id, eleifend auctor
+        mi. Aliquam nec erat in elit sollicitudin fringilla et ac nunc. Suspendisse porttitor porta tempus. Quisque a lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus mauris diam, aliquet laoreet
+        tempor ac, pellentesque vitae turpis.
+      </p>
+    </div>
+    <p align="right">From,
+      <br> {{Fromname}} </p>
+  </div>
+  <div class="D2" align='center'>
+    <button id="print" onclick="javascript:doit()">Print</button>
+  </div>
+
+</body>
+
+</html>
