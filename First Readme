@@ -2,7 +2,8 @@ THINGS that are need to add are :
 A. Paste all the reports  under resources folder or WEB-INF (create a foler with name "Reports" and paste reports )
 B. Create one folder name tlds and paste "birt.tlds inside it (path is described below inside tag taglib.)
 C. Add all the dependecy that are provided and required for Birt report.
-
+D. Add the controller and service code for creating a webservice.
+E. The code for showing the report in the HTML page are given in test.html file
 ___________________________________________________________________________________________________________________________
 CODES that needs to add in the respective files:
 
