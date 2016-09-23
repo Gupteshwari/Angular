@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.exilant.itap.spagobi.controller;
+package *.spagobi.controller;
 
 import java.io.File;
 
@@ -54,14 +54,15 @@ public class SetParamsInputControl {
 
 				Node nNode = nList.item(temp);
 				String str = "";
-
+		// Add report names and change the string value according to the parametersnames provided 
+		//in the XML of the report file
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
-					  if(ReportName == "Test_Case_Details.rptdesign") {
+					  if(ReportName == "report1.rptdesign") {
 						str="appID_for_TestCase_param";
-					} else if(ReportName=="Test_Bed_Report.rptdesign") {
+					} else if(ReportName=="report2.rptdesign") {
 						str= "appID";
-					}else if(ReportName== "Automation_Test_Report.rptdesign") {
+					}else if(ReportName== "report3.rptdesign") {
 						 str="appID";
 					}
 					
