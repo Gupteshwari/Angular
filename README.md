@@ -1,1 +1,1 @@
-# Spagobi report
+# SpagoBI with maven Project 
